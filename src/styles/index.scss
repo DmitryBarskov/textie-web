@@ -1,0 +1,24 @@
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3),
+  6: ($spacer * 10)
+);
+
+@font-face {
+  font-family: 'Jet Brains Mono';
+  src: local('Jet Brains Mono'), url(../fonts/JetBrainsMono-Regular.woff) format('woff');
+}
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import './fonts.scss';
+
+body {
+  margin: 0;
+  font-family: $open-sans !important;
+  font-weight: 400;
+}
