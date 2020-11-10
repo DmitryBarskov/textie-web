@@ -4,9 +4,9 @@ import {
   Route
 } from "react-router-dom";
 
-const mapping = ({ routes }) => (
+const Routes = ({ mapping }) => (
   <Switch>
-    {Object.entries(routes).map(([path, page]) =>
+    {Object.entries(mapping).map(([path, page]) =>
       <Route path={path}>
         {page}
       </Route>
