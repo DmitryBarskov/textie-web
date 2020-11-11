@@ -8,19 +8,17 @@ import Courses from './pages/courses';
 
 const routes = {
   "/courses": <Courses />,
-  "/": <Home />
+  "/": <Home />,
 };
 
-function App() {
-  return (
-    <Router>
-      <div className="App">
-        <Navigation />
-      </div>
+const App = () => (
+  <Router>
+    <div className="App">
+      <Navigation />
+    </div>
 
-      <Routes mapping={routes} />
-    </Router>
-  );
-}
+    <Routes mapping={routes} />
+  </Router>
+);
 
 export default App;
