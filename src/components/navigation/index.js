@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Navigation = () => (
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-6">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <Link class="navbar-brand" to="/">textie</Link>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse"
