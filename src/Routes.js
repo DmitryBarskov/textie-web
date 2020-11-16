@@ -4,10 +4,10 @@ import {
   Route
 } from "react-router-dom";
 
-const Routes = ({ mapping = {} }) => (
+const Routes = ({ mapping }) => (
   <Switch>
     {Object.entries(mapping).map(([path, page]) =>
-      <Route exact path={path}>
+      <Route exact path={path} key={path}>
         {page}
       </Route>
     )}

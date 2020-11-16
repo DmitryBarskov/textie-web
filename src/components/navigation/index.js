@@ -3,20 +3,27 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Navigation = () => (
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <Link class="navbar-brand" to="/">textie</Link>
+  <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <Link className="navbar-brand" to="/">textie</Link>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse"
+    <button className="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
             aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span className="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <Link class="nav-link" to="/courses">Courses</Link>
-        <a class="nav-link" href="#">Map</a>
-        <a class="nav-link" href="#">Progress</a>
+    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div className="navbar-nav mr-auto">
+        <Link className="nav-link" to="/courses">Courses</Link>
+        <a className="nav-link" href="#">Map</a>
+        <a className="nav-link" href="#">Progress</a>
+      </div>
+
+      <hr className="bg-light"></hr>
+
+      <div className="navbar-nav">
+        <a className="nav-link" href="#">Sign in</a>
+        <Link className="nav-link" to="/sign_up">Sign up</Link>
       </div>
     </div>
   </nav>
