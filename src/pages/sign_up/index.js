@@ -17,7 +17,6 @@ const SignUp = () => {
     signUp(formData)
       .then(response => console.log(response))
       .catch(error => {
-        console.log(error.response.data);
         setUser({
           ...user, errors: error.response.data.errors
         });

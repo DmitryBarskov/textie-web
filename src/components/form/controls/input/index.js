@@ -3,7 +3,15 @@ import React from 'react';
 import FormContext from '../../FormContext';
 import Error from '../error';
 
-// validate: value -> [isValid: boolean, [error messages]]
+// validate - a function that takes input value
+// and returns array, where first item should be a flag whether
+// the input was valid. If it wasn't the array should have error
+// messages as the second item.
+//
+// example:
+// validatePresence = (value) => [value.trim().length > 0, ["can't be blank"]];
+// label - label of the input, optional
+// name - name of the input, required, must be unique
 const ValidatedInput = ({ name, label, validate }) => {
   const { formData, setFormData } = React.useContext(FormContext);
 
